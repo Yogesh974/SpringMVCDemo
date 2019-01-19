@@ -1,25 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+	
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SignUp</title>
 </head>
 <body>
-<h1>Sign Up</h1>
-<form action="trysignup" method="post">
-			
-			  <input type="text" placeholder="Name" name="name">
-			 <input type="text" placeholder="Email" name="email">
-			 <input type="text" placeholder="Phone"name="phone">
-			
-			  <input type="text" name="userAddress.state" placeholder="state">
-			  <input type="text" name="userAddress.city" placeholder="city">
-			  <input type="text"name="userAddress.pincode" placeholder="Pincode">
-			  <input type="submit">
-
-		</form>
+	<h1>Sign Up</h1>
+	<h2>contact : <spring:message code ="contact" /> </h2>
+	<h2>email   : <spring:message code = "email"/></h2>
+	
+	<form action="trysignup" method="post">
+		<input type="text" name="name" 
+		  placeholder=<spring:message code ="name"/>>
+		 
+		 <input type="text" name="email" 
+		 placeholder=<spring:message code ="email"/>> 
+		 
+		 <input	type="text" name="phn"
+		  placeholder=<spring:message code ="phone"/>> 
 		
+		<input type="submit">
+	</form>
 </body>
 </html>

@@ -1,10 +1,10 @@
 package models;
 
-public class Address 
-{
+public class Address {
+
 	String state;
 	String city;
-	int pincode;
+	int    pincode;
 	public String getState() {
 		return state;
 	}
@@ -23,4 +23,5 @@ public class Address
 	public void setPincode(int pincode) {
 		this.pincode = pincode;
 	}
+
 }

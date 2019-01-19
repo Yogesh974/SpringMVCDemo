@@ -9,7 +9,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 public class MyInterceptor extends HandlerInterceptorAdapter
 { 
-	int v1 = 1;
+	int v1 = 5;
 	@Override
 	public boolean preHandle(HttpServletRequest request, 
 			HttpServletResponse response, 
